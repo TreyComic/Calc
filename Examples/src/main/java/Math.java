@@ -6,7 +6,6 @@ public class Math {
         float qty = 20.0f;
         float miles = 10.0f;
         float fee = 0.0f;
-        float total = price + qty + miles + fee;
         if(miles <= 4.0f){
             fee += 2.0f;
         }
@@ -22,6 +21,7 @@ public class Math {
         if(miles > 50.0f){
             fee += 20.0f;
         }
+        float total = (price *  qty) + fee;
         System.out.println("$" + total);
     }
 }
